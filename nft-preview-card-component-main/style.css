@@ -1,0 +1,130 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+.card{
+    background-color:hsl(216, 50%, 16%);
+    width: 340px;
+    border-radius: 2rem;
+    margin-top: 4rem;
+}
+.card__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+.card__image img{
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.card__profile img{
+    width: 14%;
+}
+.card__info{
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.card__info h1{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.card__info:hover h1{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);;
+}
+.card__info p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.card__profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card__nft{
+    display: flex;
+    justify-content: space-between;
+}
+.card__nft span{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.card__nft span:nth-child(1){
+    color: hsl(178, 100%, 50%);
+}
+.card__nft span:nth-child(2){
+    color: hsl(215, 51%, 70%);
+}
+.creation{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.name{
+    color: white;
+}
+.separator{
+    border: 0.02rem solid hsl(215, 32%, 27%);
+}
+.name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.view{
+    display: none;
+    position: absolute;
+    z-index: 11;
+    transition: all 0.5s ease;
+}
+.card__image-filter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 1rem;
+}
+
+.card__image:hover .view{
+    display: block;
+    width: 14%;
+}
+.card__image:hover .card__image-filter{
+    opacity: 0.2;
+}
+@media (max-width: 600px){
+    .card{
+        margin-top: 0;
+        margin-bottom: 2rem;
+        width: 78%;
+    }
+}
