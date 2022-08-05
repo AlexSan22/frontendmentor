@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+  <header>
+    <img src="images/icon-hamburger.svg" class="btn-hamburger" id="hamburger"  alt="">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div id="menu" class="container-responsive">
+        <nav class="nav">
+          <ul  class="nav-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </nav>
+        <div class="header__btns">
+          <a href="">Login</a>
+          <a href=""><button> Sign Up</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="lading">
+      <div class="lading-text">
+        <h1>More than just shorter links</h1>
+        <p>Build your brand’s recognition and get detailed insights 
+         on how your links are performing.</p>
+         <a href=""><button>Get Started</button></a>
+      </div>
+       <div class="lading-img">
+        <img src="images/illustration-working.svg" id="img-working"  alt="">
+       </div>
+    </div>
+  </header>
+ 
+  
+  <main class="main">
+    <div class="shorten">
+      <div class="shorten-input">
+        <input 
+        type="text" 
+        placeholder="Shorten a link here..."
+        class="shorten__input"
+        >
+        <p class="mesage-error">Please add link</p>
+      </div>
+      <a href="" class="shorten__btn"><button class="shorten__btn-button">Shorten It!</button></a>
+    </div>
+    <span class="loader"></span>
+    <div class="results"></div>
+    <div class="statistics">
+      <h2>Advanced Statistics</h2>
+      <p> Track how your links are performing across the web with our 
+      advanced statistics dashboard.</p>
+    </div>
+    
+    <section class="card-container">
+      <article class="card">
+        <div class="card__image">
+          <img src="images/icon-brand-recognition.svg" alt="">
+        </div>
+        <div class="card__text">
+          <h4>Brand Recognition</h4>
+          <p>Boost your brand recognition with each click. Generic links don’t 
+          mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
+      </article>
+  
+      <article class="card card--second">
+        <div class="card__image">
+          <img src="images/icon-detailed-records.svg" alt="">
+        </div>
+        <div class="card__text">
+          <h4>Detailed Records</h4>
+          <p>Gain insights into who is clicking your links. Knowing when and where 
+          people engage with your content helps inform better decisions.</p>
+        </div>
+      </article>
+      <article class="card card--third">
+        <div class="card__image">
+          <img src="images/icon-fully-customizable.svg" alt="">
+        </div>
+        <div class="card__text">
+          <h4>Fully Customizable</h4>
+          <p>  Improve brand awareness and content discoverability through customizable 
+          links, supercharging audience engagement.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <section class="boost">
+    <picture>
+      <source srcset="images/bg-boost-desktop.svg" media="(max-width:768px )">
+      <img src="images/bg-boost-desktop.svg" class="boost__img" alt="">
+    </picture>
+    <h3>Boost your links today</h3>
+    <a href=""><button>Get Started</button></a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="footer__links">
+      <div class="footer__col">
+        <ul class="footer__ul">
+          <h4>Features</h4>
+          <li><a href="">Link Shortening</a></li>
+          <li><a href="">Branded Links</a></li>
+          <li><a href="">Analytics</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <ul class="footer__ul">
+          <h4>Resources</h4>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Developers</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <ul class="footer__ul">
+          <h4>Company</h4>
+          <li><a href="">About</a></li>
+          <li><a href="">Our Team</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__social">
+      <a href=""><img src="images/icon-facebook.svg" alt=""></a>
+      <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+      <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
+      <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+    </div>
+  </footer>
+
+  <template id="template">
+    <div class="results-container">
+      <p class="results__url">https://FrontendMentor.io</p>
+      <div class="results-response">
+        <input type="text" data-id="">
+        <button data-id="">Copy</button>
+      </div>
+    </div>
+  </template>
+
+
+  
+  <script src="js/menu.js"></script>
+  <script src="js/shortly.js"></script>
+
+</body>
+</html>
